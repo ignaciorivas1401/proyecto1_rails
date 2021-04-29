@@ -11,9 +11,7 @@
   </head>
 
   <body>
-    <%= link_to 'One', root_path%>
-    <%= link_to 'Two', pages_two_path%>
-    <%= link_to 'Three', pages_three_path%>
+    <%= render 'shared/navbar' %>
     <%= yield %>
   </body>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
